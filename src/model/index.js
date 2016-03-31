@@ -165,4 +165,4 @@ module.exports = {
       iconBtnClass: 'fa fa-align-justify'
     }
   ]
-}
+};

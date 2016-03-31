@@ -1,40 +1,43 @@
 {
   "name": "webpack-single-page",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "pychen",
   "description": "webpack single page example.",
   "repository": "https://github.com/pingyuanChen/webpack-single-page.git",
   "scripts": {
     "prepublish": "",
-    "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
-    "build": "webpack --config webpack-production.config.js --progress --colors"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [
     "single page",
     "react",
+    "react-router",
     "webpack"
   ],
-  "license": "",
+  "license": "ISC",
   "dependencies": {
-    "page": "^1.6.3",
-    "react": ">=0.13",
-    "react-tap-event-plugin": ">=0.1.3",
-    "react-ui-components": "^0.5.6"
+    "react": "^0.14.7",
+    "react-addons-create-fragment": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "react-tap-event-plugin": "^0.2.2",
+    "react-ui-components": "^1.0.3"
   },
   "devDependencies": {
-    "babel-core": "^5.8.23",
-    "babel-loader": "^5.3.2",
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
     "css-loader": "^0.16.0",
-    "del": "^2.0.1",
     "extract-text-webpack-plugin": "^0.8.2",
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4",
     "html-webpack-plugin": "^1.6.1",
-    "node-sass": "^3.3.2",
-    "react-hot-loader": "^1.3.0",
-    "sass-loader": "^2.0.1",
-    "style-loader": "^0.12.3",
-    "webpack": "^1.12.0",
-    "webpack-dev-server": "^1.10.1"
+    "node-sass": "3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }

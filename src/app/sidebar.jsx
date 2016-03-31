@@ -2,8 +2,7 @@ var React = require('react');
 var Components = require('react-ui-components');
 var Menu = Components.Menu;
 var WindowListener = Components.WindowListener;
-var page = require('page');
-
+var browserHistory = require('react-router').browserHistory;
 
 module.exports = React.createClass({
   mixins: [WindowListener],
@@ -11,10 +10,6 @@ module.exports = React.createClass({
   propTypes: {
     sidebarData: React.PropTypes.array.isRequired,
     selectedVal: React.PropTypes.string
-  },
-
-  windowListeners: {
-    hashchange: '_onHashChange'
   },
 
   getInitialState: function(){
@@ -51,12 +46,14 @@ module.exports = React.createClass({
   },
 
   _onItemTap: function(e, index, data){
-    page(data.link);
-  },
-
-  _onHashChange: function(e){
-    this.setState({selectedVal: page.current.slice(1)});
+    browserHistory.push({
+      pathname: '/'+data.link
+    });
+    this.setState({
+      selectedVal: data.link
+    });
   }
+  
 });
 
 
