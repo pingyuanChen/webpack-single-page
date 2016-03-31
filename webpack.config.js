@@ -28,6 +28,7 @@ module.exports = {
   devtool: 'eval',
 
   devServer: {
+    historyApiFallback: true,
     hot: true,
     inline: true,
     progress: true,
