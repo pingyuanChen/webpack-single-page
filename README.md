@@ -9,7 +9,7 @@ Webpack single page example with react, react-router and webpack-dev-server.
 npm install
 ```
 
-*Run the development server*:
+*Run the webpack-dev-server*:
 
 ```sh
 npm start

@@ -31,6 +31,5 @@ Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. N
   },
 
   _tabDidChange: function(){
-
   }
 });
